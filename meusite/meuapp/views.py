@@ -7,3 +7,6 @@ from django.http import HttpResponse
 
 def index(request):
     return HttpResponse("Hello, world")
+
+def post_list(request):
+    return render(request, 'meuapp/post_list.html', {})

@@ -1,0 +1,7 @@
+{%include 'meuapp/partials/header.html'%}
+  <ul>
+  {% for todo in todos%}
+    <li><a href="/meuapp/blog/details/{{todo.id}}">{{todo.title}}</a> | {{todo.text}} </li>
+  {%endfor%}
+  </ul>
+{%include 'meuapp/partials/footer.html'%}

@@ -1,0 +1,8 @@
+{%include 'partial/header.html'%}
+
+  {%for jogado in jogadores%}
+    <h2><a href="details/{{jogado.id}}">Name: {{jogado.nome}}</a></h2>
+    <h3>Level: {{jogado.level}}</h3>
+  {%endfor%}
+
+{%include 'partial/footer.html'%}
